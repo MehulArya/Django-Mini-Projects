@@ -13,10 +13,15 @@ Trying to learn Django from projects and documenting what did I learn from each 
 **Project structure:**
 
 pages/
+
 ├── urls.py
+
 ├── views.py
+
 └── templates/pages/
+
 ├── base.html
+
 └── home.html
 
 
