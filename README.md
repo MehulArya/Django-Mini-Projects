@@ -1,7 +1,7 @@
 # Django-Mini-Projects
 Trying to learn Django from projects and documenting what did I learn from each project.
 
-# Hello Pages App — Phase 1: Core Django Syntax
+## Hello Pages App — Phase 1: Core Django Syntax
 
 **Concepts covered:**  
 - URL routing: project-level & app-level (`''` = root path)  
