@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>Guess App</title>
+</head>
+<body>
+<h1>Your Guess is: </h1>
+<form method="GET" action={% url 'process_number' %}>
+<label for="">Guess A Number</label>
+<input type="text" name="guess" size="40"/>
+<input type="Submit">
+</form>
+</body>
+</html>
