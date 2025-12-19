@@ -1,0 +1,7 @@
+<h1>Team Name</h1>
+<ul>
+{% for name in team %}
+<li><a href={% url 'Detail-View' name.id  %}>{{ name.title }}</a></li>
+{% endfor %}
+</ul>
+
