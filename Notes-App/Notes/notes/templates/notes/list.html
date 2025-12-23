@@ -1,7 +1,7 @@
 <h1>Team Name</h1>
 <ul>
 {% for name in team %}
-<li><a href={% url 'Detail-View' name.id  %}>{{ name.title }}</a></li>
+<li><a href={% url 'Detail-View' name.id  %}>{{ name.title }}</a> <a href={% url 'Edit-Blog' name.id %}> (Edit Blog) </a> <a href={% url 'Delete-Blog' name.id %}> (Delete Blog) </a></li>
 {% endfor %}
 </ul>
 
