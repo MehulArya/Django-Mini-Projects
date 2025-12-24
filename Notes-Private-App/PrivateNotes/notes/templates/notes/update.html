@@ -1,0 +1,6 @@
+<h1>Update {{ note_object.text }}</h1>
+<form method="POST">
+{% csrf_token %}
+{{ form.as_p }}
+<input type="Submit" value="Update">
+</form>
