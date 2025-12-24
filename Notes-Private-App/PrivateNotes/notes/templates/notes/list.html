@@ -1,0 +1,12 @@
+<h1>List Template</h1>
+{% if note_object %}
+<ul>
+	{% for note in note_object %}
+	<li>
+		<p>{{ note.title }}</p>
+	</li>
+	{% endfor %}
+</ul>
+{% else %}
+<p>No Notes Yet</p>
+{% endif %}
