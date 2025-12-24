@@ -3,7 +3,7 @@
 <ul>
 	{% for note in note_object %}
 	<li>
-		{{ note.text }} <a href="{% url "Read-Blog" note.id %}">(Read Note)</a><a href="{% url "Update-Blog" note.id %}">(Update Note)</a>
+		{{ note.text }} <a href="{% url "Read-Blog" note.id %}">(Read Note)</a><a href="{% url "Update-Blog" note.id %}">(Update Note)</a><a href="{% url "Delete-Blog" note.id %}">(Delete Note)</a>
 	</li>
 	{% endfor %}
 </ul>

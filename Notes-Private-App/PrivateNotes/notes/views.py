@@ -46,3 +46,13 @@ class UpdateNote(LoginRequiredMixin, View):
             form.save()
             return redirect("Note-List")
         return render(request, "notes/update.html")
+
+class DeleteNote(LoginRequiredMixin, View):
+    def get(self, request, title_id):
+        note = get_object_or_404(Note, id=title_id, owner=request.user)
+        ctx = { "note_object" : note }
+        return render(request, "notes/delete.html", ctx)
+    def post(self, request, title_id):
+        note = get_object_or_404(Note, id=title_id, owner=request.user)
+        note.delete()
+        return redirect("Note-List")
