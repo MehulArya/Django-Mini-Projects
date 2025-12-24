@@ -155,3 +155,28 @@ By the end of this phase:
 - I can reason about bugs instead of guessing syntax
 - I can build real Django apps instead of demo pages
 
+## Private Notes App — Phase 3: Authentication & ModelForms
+
+### Concepts Covered
+- User authentication: Login and Logout
+- `LoginRequiredMixin` and `request.user`
+- ModelForms for Create and Update
+- Object-level ownership (`owner=request.user`) for security
+- GET vs POST handling in custom Views
+- Redirect after POST (PRG pattern) to prevent duplicate submissions
+- Safe CRUD operations: Create, Read, Update, Delete
+- URL parameters for dynamic routing
+- Templates organization and context passing
+
+### Features Implemented
+1. **Login / Logout** — Secure authentication
+2. **Create Note** — Users can add notes; ownership enforced
+3. **Read Note** — Users can view only their own notes
+4. **Update Note** — Edit notes using pre-filled ModelForm
+5. **Delete Note** — Confirmation page and POST-only deletion
+
+### Outcome
+- Built a **secure, user-specific CRUD application**
+- Learned to combine **authentication, forms, and views** properly
+- Gained understanding of **request lifecycle, object ownership, and backend security**
+
